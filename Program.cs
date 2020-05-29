@@ -29,6 +29,7 @@ namespace Vending
                         break;
                     case 2:
                         List<string> names = machine.GetProductNames();
+                        names.Sort();
                         Console.WriteLine("All Product Names:");
                         foreach (string name in names)
                         {
@@ -104,7 +105,7 @@ namespace Vending
                     case 9:
                         Console.WriteLine($"Total Value: {machine.TotalValue}");
                         break;
-                    case 0: 
+                    case 0:
                         Console.WriteLine("Goodbye");
                         return;
                     default:
